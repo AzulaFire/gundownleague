@@ -6,11 +6,6 @@ const roboto = Roboto({
   weight: ['100', '300', '400', '500', '700', '900'],
 });
 
-export const metadata = {
-  title: 'GunDown League',
-  description: 'First-person Sports Shooter - The game will never be the same.',
-};
-
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>

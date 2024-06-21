@@ -9,6 +9,25 @@ import Footer from '@/components/Footer';
 import Faqs from '@/components/Faqs';
 import { useState } from 'react';
 
+export const metadata = {
+  title: 'GunDown League - Fast-Paced Action & Sports Gameplay',
+  description:
+    'Experience the thrill of Ultimate Sports FPS, the fast-paced game that combines intense first-person shooter action with exciting sports gameplay. Join the action now!',
+  keywords: [
+    'GunDown League',
+    'GDL',
+    'FPS game',
+    'sports video game',
+    'first-person shooter',
+    'action sports game',
+    'multiplayer FPS',
+    'competitive gaming',
+    'eSports',
+    'online gaming',
+    'Ultimate Sports FPS',
+  ],
+};
+
 export default function Home() {
   const [japanese, setJapanese] = useState(false);
 
