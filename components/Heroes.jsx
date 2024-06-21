@@ -11,6 +11,7 @@ import {
 import Image from 'next/image';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const Heroes = ({ japanese }) => {
   const [viewGrid, setViewGrid] = useState(true);
@@ -31,7 +32,7 @@ const Heroes = ({ japanese }) => {
         id='Heroes'
         className='w-full bg-black text-white text-justify leading-8 text-xl px-10 pt-20'
       >
-        <h1 className='lg:text-4xl my-4 mx-6 text-3xl'>
+        <h1 className='lg:text-4xl my-4 lg:mx-6 text-3xl'>
           ヒーロー{' '}
           <span className='text-lime-500 font-bold font-montserrat pb-4'>
             の紹介
@@ -45,34 +46,36 @@ const Heroes = ({ japanese }) => {
             transition={{ ease: 'linear', delay: 0.2 }}
           >
             {heroes_jp.map((hero) => (
-              <Card
+              <Link
                 key={hero.id}
-                className='bg-black border-none cursor-pointer'
+                href={'#Heroes'}
                 onClick={() => handleSelectedHero(hero.id)}
               >
-                <CardHeader>
-                  <CardTitle className='border-2 border-cyan-400 rounded bg-cyan-600 hover:bg-cyan-400 hover:scale-105 hover:ease-in transition duration-0 hover:duration-250'>
-                    <Image
-                      src={hero.image}
-                      alt={hero.name}
-                      width={0}
-                      height={0}
-                      sizes='100vw'
-                      priority={true}
-                      className='w-full h-auto hero'
-                    />
-                  </CardTitle>
-                  <CardDescription className='text-cyan-400 text-2xl font-semibold text-center font-montserrat'>
-                    {hero.name}
-                  </CardDescription>
-                </CardHeader>
-              </Card>
+                <Card className='bg-black border-none cursor-pointer'>
+                  <CardHeader>
+                    <CardTitle className='border-2 border-cyan-400 rounded bg-cyan-600 hover:bg-cyan-400 hover:scale-105 hover:ease-in transition duration-0 hover:duration-250'>
+                      <Image
+                        src={hero.image}
+                        alt={hero.name}
+                        width={0}
+                        height={0}
+                        sizes='100vw'
+                        priority={true}
+                        className='w-full h-auto hero'
+                      />
+                    </CardTitle>
+                    <CardDescription className='text-cyan-400 text-2xl font-semibold text-center font-montserrat'>
+                      {hero.name}
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+              </Link>
             ))}
           </motion.div>
         ) : (
-          <div className='flex md:flex-row bg-field flex-col'>
+          <div id='HeroBox' className='flex md:flex-row bg-field flex-col'>
             <motion.div
-              className='md:w-2/5 w-full'
+              className='md:w-2/5 w-full flex items-end'
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ ease: 'linear', delay: 0.2 }}
@@ -98,6 +101,7 @@ const Heroes = ({ japanese }) => {
                   alt='Ability'
                   width={70}
                   height={30}
+                  className='w-[70px] h-[70px]'
                 />
               </div>
               <h3 className='text-lime-400 ml-4 font-montserra px-7'>
@@ -126,7 +130,7 @@ const Heroes = ({ japanese }) => {
         id='Heroes'
         className='w-full bg-black text-white text-justify leading-8 text-xl px-10 pt-20'
       >
-        <h1 className='lg:text-4xl my-4 mx-6 text-3xl'>
+        <h1 className='lg:text-4xl my-4 lg:mx-6 text-3xl'>
           Meet the{' '}
           <span className='text-lime-500 font-bold font-montserrat pb-4'>
             Heroes
@@ -140,34 +144,36 @@ const Heroes = ({ japanese }) => {
             transition={{ ease: 'linear', delay: 0.2 }}
           >
             {heroes.map((hero) => (
-              <Card
+              <Link
                 key={hero.id}
-                className='bg-black border-none cursor-pointer'
+                href={'#Heroes'}
                 onClick={() => handleSelectedHero(hero.id)}
               >
-                <CardHeader>
-                  <CardTitle className='border-2 border-cyan-400 rounded bg-cyan-600 hover:bg-cyan-400 hover:scale-105 hover:ease-in transition duration-0 hover:duration-250'>
-                    <Image
-                      src={hero.image}
-                      alt={hero.name}
-                      width={0}
-                      height={0}
-                      sizes='100vw'
-                      priority={true}
-                      className='w-full h-auto hero'
-                    />
-                  </CardTitle>
-                  <CardDescription className='text-cyan-400 text-2xl font-semibold text-center font-montserrat'>
-                    {hero.name}
-                  </CardDescription>
-                </CardHeader>
-              </Card>
+                <Card className='bg-black border-none cursor-pointer'>
+                  <CardHeader>
+                    <CardTitle className='border-2 border-cyan-400 rounded bg-cyan-600 hover:bg-cyan-400 hover:scale-105 hover:ease-in transition duration-0 hover:duration-250'>
+                      <Image
+                        src={hero.image}
+                        alt={hero.name}
+                        width={0}
+                        height={0}
+                        sizes='100vw'
+                        priority={true}
+                        className='w-full h-auto hero'
+                      />
+                    </CardTitle>
+                    <CardDescription className='text-cyan-400 text-2xl font-semibold text-center font-montserrat'>
+                      {hero.name}
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+              </Link>
             ))}
           </motion.div>
         ) : (
-          <div className='flex md:flex-row bg-field flex-col'>
+          <div id='HeroBox' className='flex md:flex-row bg-field flex-col'>
             <motion.div
-              className='md:w-2/5 w-full'
+              className='md:w-2/5 w-full flex items-end'
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ ease: 'linear', delay: 0.2 }}
@@ -193,6 +199,7 @@ const Heroes = ({ japanese }) => {
                   alt='Ability'
                   width={70}
                   height={30}
+                  className='w-[70px] h-[70px]'
                 />
               </div>
               <h3 className='text-lime-400 ml-4 font-montserra px-7'>

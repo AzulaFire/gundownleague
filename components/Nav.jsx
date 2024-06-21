@@ -43,7 +43,13 @@ const Nav = ({ handleTranslate }) => {
           <div className='flex w-full justify-end text-white items-center px-4 lg:hidden'>
             <Sheet>
               <SheetTrigger>
-                <Image src={hamburger} alt='Menu' width={30} height={30} />
+                <Image
+                  src={hamburger}
+                  alt='Menu'
+                  width={30}
+                  height={30}
+                  className='w-[30px] h-[30px]'
+                />
               </SheetTrigger>
               <SheetContent side='left' className='bg-lime-700'>
                 <SheetHeader>
@@ -90,7 +96,13 @@ const Nav = ({ handleTranslate }) => {
           <div className='flex w-full justify-end text-white items-center px-4 lg:hidden'>
             <Sheet>
               <SheetTrigger>
-                <Image src={hamburger} alt='Menu' width={30} height={30} />
+                <Image
+                  src={hamburger}
+                  alt='Menu'
+                  width={30}
+                  height={30}
+                  className='w-[30px] h-[30px]'
+                />
               </SheetTrigger>
               <SheetContent side='left' className='bg-lime-700'>
                 <SheetHeader>

@@ -11,13 +11,13 @@ const Modes = ({ japanese }) => {
         id='Modes'
         className='w-full bg-cyan-900 bg-gradient-to-b from-black to-none text-white lg:text-justify leading-8 text-xl px-10 py-20'
       >
-        <h1 className='lg:text-4xl mb-8 mx-6 text-3xl'>
+        <h1 className='lg:text-4xl mb-8 lg:mx-6 text-3xl'>
           ユニークな{' '}
           <span className='text-lime-500 font-bold font-montserrat pb-4'>
             モード
           </span>
         </h1>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 px-10 bg-plays'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 bg-plays w-full'>
           <div>
             <Image
               src={football}
@@ -74,13 +74,13 @@ const Modes = ({ japanese }) => {
         id='Modes'
         className='w-full bg-cyan-900 bg-gradient-to-b from-black to-none text-white lg:text-justify leading-8 text-xl px-10 py-20'
       >
-        <h1 className='lg:text-4xl mb-8 mx-6 text-3xl'>
+        <h1 className='lg:text-4xl mb-8 lg:mx-6 text-3xl'>
           Unique{' '}
           <span className='text-lime-500 font-bold font-montserrat pb-4'>
             Modes
           </span>
         </h1>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 px-10 bg-plays'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 bg-plays w-full'>
           <div>
             <Image
               src={football}

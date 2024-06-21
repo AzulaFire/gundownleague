@@ -13,7 +13,7 @@ const Faqs = ({ japanese }) => {
         id='Faqs'
         className='w-full bg-black text-white leading-8 text-xl px-10 pb-20 pt-10'
       >
-        <h1 className='lg:text-4xl my-4 mx-6 text-3xl'>
+        <h1 className='lg:text-4xl my-4 lg:mx-6 text-3xl'>
           よくある{' '}
           <span className='text-lime-500 font-bold font-montserrat pb-4'>
             質問
@@ -39,7 +39,7 @@ const Faqs = ({ japanese }) => {
         id='Faqs'
         className='w-full bg-black text-white leading-8 text-xl px-10 pb-20 pt-10'
       >
-        <h1 className='lg:text-4xl my-4 mx-6 text-3xl'>
+        <h1 className='lg:text-4xl my-4 lg:mx-6 text-3xl'>
           Frequently Asked{' '}
           <span className='text-lime-500 font-bold font-montserrat pb-4'>
             Questions
